@@ -1,0 +1,175 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.firstnavli {
+  color: black !important;
+}
+.shift {
+  margin-left: 720px !important;
+}
+.hr {
+  margin-top: -10px;
+}
+.logo {
+  margin-top: -20px !important;
+}
+.firstinp {
+  display: inline !important;
+}
+
+.carticon {
+  margin-left: 750px;
+}
+.cart {
+  height: 80vh;
+  position: fixed;
+  z-index: 999999999999;
+  margin-left: 920px !important;
+  overflow-y: auto !important; /* Enable vertical scrolling */
+}
+.fa-cart-plus {
+  color: rgb(255, 173, 20);
+}
+.fa-cart-shopping {
+  color: rgb(255, 173, 20);
+}
+.fa-user {
+  color: white;
+}
+
+.caroimg {
+  border-radius: 10px !important;
+}
+.cardbtn {
+  margin-top: -130px;
+}
+.scndcard {
+  margin-top: 100px;
+}
+
+
+/* Default style for non-active nav links */
+.navbar-nav .nav-item .nav-link {
+  color: white ;
+  background-color: transparent;
+}
+.mininav{
+  background-color: white;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* This makes sure the quan is on the far left */
+  gap: 10px; /* Add space between the elements if needed */
+}
+
+.quan {
+  margin-left: auto; /* Pushes the .quan div to the left */
+  /* border: 1px solid black; */
+  padding: 1px !important;
+  font-size: 12px;
+}
+
+
+
+.product-item {
+  transition: .5s;
+}
+
+.product-action {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.product-action a.btn {
+  position: relative;
+  margin: 0 3px;
+  margin-top: 100px;
+  opacity: 0;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 30px #DDDDDD;
+}
+
+.product-item:hover .product-action {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.product-item:hover .product-action a.btn:first-child {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s 0s;
+}
+
+.product-item:hover .product-action a.btn:nth-child(2) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .05s;
+}
+
+.product-item:hover .product-action a.btn:nth-child(3) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .1s;
+}
+
+.product-item:hover .product-action a.btn:nth-child(4) {
+  opacity: 1;
+  margin-top: 0;
+  transition: .3s .15s;
+}
+
+.product-item .product-img img {
+  transition: .5s;
+}
+
+.product-item:hover .product-img img {
+  transform: scale(1.2);
+}
+
+.product-item .btn:hover {
+  color: #FFD333 !important;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
+.btn-close{
+  margin-left: 340px;
+}
+.cards{
+  height: 365px !important;
+}
+
+.carttext{
+  font-weight: 501;
+}
